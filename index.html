@@ -1,20 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-	   <div class="reveal">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
       <div class="slides">
         <section data-auto-animate data-auto-animate-unmatched="fade">
           <img src="./examples/assets/caratura.png" />
@@ -87,64 +90,185 @@
           >
         </section>
 
+        <!-- Inicio Operadores de C# -->
         <section>
           <section data-auto-animate>
+            <h4>Operadores de C#</h4>
+            <p>
+              Los operadores se utilizan para realizar operaciones metematicas o
+              otras con variables , constante y valores.
+            </p>
+            <h3>Ejemplo usando el +</h3>
             <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							import React, { useState } from 'react';
-
-							function Example() {
-							  const [count, setCount] = useState(0);
-
-							  return (
-							    ...
-							  );
-							}
+							int x = 100 + 50;
 						</code></pre>
           </section>
           <section data-auto-animate>
             <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							function Example() {
-							  const [count, setCount] = useState(0);
-
-							  return (
-							    &lt;div&gt;
-							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-							        Click me
-							      &lt;/button&gt;
-							    &lt;/div&gt;
-							  );
-							}
+int sum1 = 100 + 50;        // 150 (100 + 50)
+int sum2 = sum1 + 250;      // 400 (150 + 250)
+int sum3 = sum2 + sum2;     // 800 (400 + 400)
 						</code></pre>
           </section>
           <section data-auto-animate>
             <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-							function Example() {
-							  // A comment!
-							  const [count, setCount] = useState(0);
-
-							  return (
-							    &lt;div&gt;
-							      &lt;p&gt;You clicked {count} times&lt;/p&gt;
-							      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-							        Click me
-							      &lt;/button&gt;
-							    &lt;/div&gt;
-							  );
-							}
+int sumar = 100 + 50;           // 150 (100 + 50)
+int restar = 15 - 5;            // 10 (15 - 5) 
+int multiplicar = 10 * 10;      // 100 (10 * 10)
+int dividir = 100 / 2;          // 50 (100 / 2)
+int residuo = 100 % 3;          // 1 (100 % 3)
 						</code></pre>
           </section>
         </section>
+        <!-- fin Operadores de C# -->
 
+        <!-- ejemplo de resta -->
         <section>
           <section data-auto-animate>
-            <h3>Swapping list items</h3>
-            <ul>
-              <li>One</li>
-              <li>Two</li>
-              <li>Three</li>
-            </ul>
+            <img src="./examples/assets/resta.jpg" />
           </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+// ejemplo con resta 
+int resta1 = 100 - 50;                  // ?
+Console.WriteLine($"resultado de restas 100 - 50 es : {resta1}");
+
+int resta2 = resta1 - 10;               // ?
+Console.WriteLine($"resultado de restar resta1 - 10 es : {resta2}");
+
+int resta3 = resta2 - resta1;           // ?
+Console.WriteLine($"resultado de restar resta2 - resta1 es : {resta3}");
+
+int numero = 5;                         // ?
+int resta4 = resta3 - numero;           // ?
+Console.WriteLine($"numero : {numero}");
+Console.WriteLine($"resultado de restar resta3 - numero es : {resta4}");
+						</code></pre>
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+int numero1 = 100;
+int numero2 = 21;
+int numero3 = 10;
+int resultado = numero1 - numero2 - numero3;      // ?
+Console.WriteLine($"resltado de restar numero1:{numero1} - numero2:{numero2} - numero3:{numero3 } = {resultado}");
+
+						</code></pre>
+          </section>
+        </section>
+        <!-- fin de ejemplo de resta -->
+
+        <!-- ejemplo de suma -->
+        <section>
+          <section data-auto-animate>
+            <img src="./examples/assets/suma.jpg" />
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+// ejemplo con suma 
+int suma1 = 100 + 50;                  // ?
+Console.WriteLine($"resultado de sumas 100 + 50 es : {suma1}");
+
+int suma2 = suma1 + 10;               // ?
+Console.WriteLine($"resultado de sumar suma1 + 10 es : {suma2}");
+
+int suma3 = suma2 + suma1;           // ?
+Console.WriteLine($"resultado de sumar suma2 + suma1 es : {suma3}");
+
+int numero = 5;                         // ?
+int suma4 = suma3 + numero;           // ?
+Console.WriteLine($"numero : {numero}");
+Console.WriteLine($"resultado de sumar suma3 + numero es : {suma4}");
+						</code></pre>
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+
+int numero1 = 100;
+int numero2 = 21;
+int numero3 = 10;
+int resultado = numero1 + numero2 + numero3;      // ?
+Console.WriteLine($"resltado de sumar numero1:{numero1} + numero2:{numero2} + numero3:{numero3 } = {resultado}");
+
+						</code></pre>
+          </section>
+        </section>
+        <!-- fin de ejemplo de suma -->
+
+        <!-- ejemplo de multiplicacion -->
+        <section>
+          <section data-auto-animate>
+            <img src="./examples/assets/multiplicacion.jpg" />
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+// ejemplo con multiplicacion 
+int multiplicacion1 = 100 * 50;                  // ?
+Console.WriteLine($"resultado de multiplicacions 100 * 50 es : {multiplicacion1}");
+
+int multiplicacion2 = multiplicacion1 * 10;               // ?
+Console.WriteLine($"resultado de multiplicacion multiplicacion1 * 10 es : {multiplicacion2}");
+
+int multiplicacion3 = multiplicacion2 * multiplicacion1;           // ?
+Console.WriteLine($"resultado de multiplicacion multiplicacion2 * multiplicacion1 es : {multiplicacion3}");
+
+int numero = 5;                         // ?
+int multiplicacion4 = multiplicacion3 * numero;           // ?
+Console.WriteLine($"numero : {numero}");
+Console.WriteLine($"resultado de multiplicacion multiplicacion3 * numero es : {multiplicacion4}");
+						</code></pre>
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+
+int numero1 = 100;
+int numero2 = 21;
+int numero3 = 10;
+int resultado = numero1 * numero2 * numero3;      // ?
+Console.WriteLine($"resltado de multiplicacion numero1:{numero1} * numero2:{numero2} * numero3:{numero3 } = {resultado}");
+
+						</code></pre>
+          </section>
+        </section>
+        <!-- fin de ejemplo de multiplicacion -->
+
+        <!-- ejemplo de divicion -->
+        <section>
+          <section data-auto-animate>
+            <img src="./examples/assets/divicion.jpg" />
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+// ejemplo con divicion 
+double divicion1 = 100 / 50;                  // ?
+Console.WriteLine($"resultado de divicions 100 / 50 es : {divicion1}");
+
+double divicion2 = divicion1 / 10;               // ?
+Console.WriteLine($"resultado de divicion divicion1 / 10 es : {divicion2}");
+
+double divicion3 = divicion2 / divicion1;           // ?
+Console.WriteLine($"resultado de divicion divicion2 / divicion1 es : {divicion3}");
+
+double numero = 5;                         // ?
+double divicion4 = divicion3 / numero;           // ?
+Console.WriteLine($"numero : {numero}");
+Console.WriteLine($"resultado de divicion divicion3 / numero es : {divicion4}");
+						</code></pre>
+          </section>
+          <section data-auto-animate>
+            <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+double numero1 = 100;
+double numero2 = 21;
+double numero3 = 10;
+double resultado = numero1 / numero2 / numero3;      // ?
+Console.WriteLine($"resltado de divicion numero1:{numero1} / numero2:{numero2} / numero3:{numero3 } = {resultado}");
+
+						</code></pre>
+          </section>
+        </section>
+        <!-- fin de ejemplo de divicion -->
+
+        <section>
           <section data-auto-animate>
             <h3>Swapping list items</h3>
             <ul>
@@ -468,20 +592,20 @@
       </div>
     </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
